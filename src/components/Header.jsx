@@ -4,7 +4,7 @@ import { Close, Menu,} from "@mui/icons-material";
 import { useState } from "react";
 
 const Header = () => {
-  const [menuOpened, setMenuOpened] = useState(true);
+  const [menuOpened, setMenuOpened] = useState(false);
 
   return (
     <header className="fixed top-0 flex justify-center w-full bg-primary-blue py-3 z-50">
