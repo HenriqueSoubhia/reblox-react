@@ -24,9 +24,7 @@ const router = createBrowserRouter([
       }
     ],
   },
-],{
-  basename:"/reblox-react/"
-});
+]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
