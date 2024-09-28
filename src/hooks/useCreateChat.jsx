@@ -25,7 +25,7 @@ const useCreateChat = () => {
   const [loading, setLoading] = useState(false)
 
   const generateChat = () => {
-    const API_KEY = import.meta.env.VITE_API_KEY;
+    const API_KEY = "AIzaSyDpF3pGM2DVa_8zD0pAIgrP2MsGqRPG_pg";
     const genAI = new GoogleGenerativeAI(API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const newChat = model.startChat({ history });
