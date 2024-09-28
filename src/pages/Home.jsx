@@ -11,13 +11,13 @@ import imgReblox from "../imgs/rebloxsolucao.png"
 
 const Home = () => {
 
-  scrollTo(0,0)
+  scrollTo(0, 0)
 
 
   return (
     <main className="bg-light-gray flex flex-col items-center">
       {/* Banner Principal */}
-      <section className="relative w-full h-[90vh] flex justify-center items-center bg-banner-image bg-cover backdrop-brightness-50 bg-force-left md:bg-center">
+      <section className="relative w-full h-[90vh] flex justify-center items-center bg-banner-image bg-cover backdrop-brightness-50 bg-center bg-no-repeat">
         <div className=" text-center bg-opacity-60 z-10 flex flex-col justify-center items-center gap-4 w-full h-full bg-black">
           <h1 className="text-5xl font-bold text-light-white">
             Imersão Virtual na Fórmula E
@@ -25,7 +25,7 @@ const Home = () => {
           <p className="text-xl text-light-white">
             Explore o futuro da mobilidade elétrica.
           </p>
-          <Button label="Experimente Agora" href="/experiencia" />
+          <Button label="Experimente Agora" targetBlank href="https://www.roblox.com/pt/games/17412031045/reblox" />
         </div>
       </section>
 
@@ -54,12 +54,12 @@ const Home = () => {
               público vivenciar o mundo da Fórmula E de maneira interativa e
               imersiva.
             </p>
-          <div className="flex-1 grid-cols-2 grid-rows-2 col-span-3 grid md:hidden">
-            <img className="aspect-video" src={imgBanco} alt="" />
-            <img className="aspect-video" src={imgPitstops} alt="" />
-            <img className="aspect-video" src={imgPodio} alt="" />
-            <img className="aspect-video" src={imgReblox} alt="" />
-          </div>
+            <div className="flex-1 grid-cols-2 grid-rows-2 col-span-3 grid md:hidden">
+              <img className="aspect-video" src={imgBanco} alt="" />
+              <img className="aspect-video" src={imgPitstops} alt="" />
+              <img className="aspect-video" src={imgPodio} alt="" />
+              <img className="aspect-video" src={imgReblox} alt="" />
+            </div>
             <Button label="Veja como resolvemos isso" href="/solution" />
           </div>
           <div className="hidden flex-1 grid-cols-2 grid-rows-2 col-span-3 md:grid">
@@ -87,7 +87,8 @@ const Home = () => {
             Pronto para experimentar a Fórmula E?
           </h2>
           <Link
-            to="/experiencia"
+            target="_blank"
+            to="https://www.roblox.com/pt/games/17412031045/reblox"
             className="inline-block bg-light-white text-primary-blue px-8 py-4 font-bold rounded-lg"
           >
             Explore no Roblox

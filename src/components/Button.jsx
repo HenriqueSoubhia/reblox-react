@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Button = ({ label, href = "", variant = "primary" }) => {
+const Button = ({ label, href = "", variant = "primary", targetBlank = false }) => {
   let styles = "";
 
   switch (variant) {
@@ -16,7 +16,7 @@ const Button = ({ label, href = "", variant = "primary" }) => {
 
   if (href) {
     return (
-      <Link to={href} className={styles}>
+      <Link target={targetBlank ? "_blank" : ""} to={href} className={styles}>
         {label}
       </Link>
     );
